@@ -4,6 +4,7 @@ export declare global{
             Login: undefined,
             RecuperarSenha: undefined,
             Cadastro: undefined,
+            Notificacao: undefined,
         }
     }
 }
