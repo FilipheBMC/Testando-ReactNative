@@ -19,7 +19,7 @@ export const AuthRoutes = () => {
     >
       <Screen name = 'Login' component= {Login}/>
       <Screen name = "RecuperarSenha" component = {RecuperarSenha} options={{headerShown: true}}/>
-      <Screen name = 'Cadastro' component={ Cadastro } options={{headerShown: true}} />
+      <Screen name = 'Cadastro' component={ Cadastro } options={{headerShown: false}} />
     </Navigator>
   )
 }
