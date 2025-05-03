@@ -1,11 +1,11 @@
-import { View, Text, Settings } from 'react-native';
+import { View, Text } from 'react-native';
 import React from 'react';
 
 
 import theme from "../styles/theme";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Carteira } from "../screens/Tab/Carteira";
-import { settings } from '../screens/Tab/settings';
+import { Settings } from '../screens/Tab/Settings';
 import { Notificacao } from '@src/screens/Tab/Notificacao';
 import { Relatorio } from '@src/screens/Tab/Relatorio';
 
@@ -48,9 +48,9 @@ export const TabRoutes = () => {
 
       <Screen
         name="settings"
-        component={settings}
+        component={Settings}
       />
-      
+
     </Navigator>
   )
 }

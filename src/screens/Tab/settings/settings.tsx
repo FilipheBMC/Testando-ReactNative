@@ -7,7 +7,7 @@ import {
 
 import { View, Text} from "react-native";
 
-export const settings = () => {
+export const Settings = () => {
   return (
     <Container>
       <Title>Settings</Title>

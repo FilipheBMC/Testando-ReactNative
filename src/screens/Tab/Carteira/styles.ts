@@ -6,6 +6,6 @@ export const Container = styled.View`
     background-color: ${theme.COLORS.YELLOW};
 `;
 
-export const Title = styled.View`
+export const Title = styled.Text`
 
 `;
