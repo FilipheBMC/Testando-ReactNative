@@ -24,4 +24,25 @@ export const transaction = [
         price: 200,
         icon: EntradaPgn
     },
+    {
+        id: "4",
+        name: "Netflix",
+        subtitle: "Pagamento referente a Neftlix",
+        price: 49.99,
+        icon: NeftlixPng
+    },
+    {
+        id: "5",
+        name: "PayPal",
+        subtitle: "Pagamento referente a PayPal",
+        price: 61.60,
+        icon: PayPalPng
+    },
+    {
+        id: "6",
+        name: "Entrada",
+        subtitle: "Depósito bancário",
+        price: 200,
+        icon: EntradaPgn
+    },
 ]

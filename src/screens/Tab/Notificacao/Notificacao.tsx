@@ -1,16 +1,22 @@
 import React from 'react'
 import {
-        Container,
-        Title,
+  Container,
+  Title,
 
 } from "./styles";
 
-import { View, Text} from "react-native";
+import { Header } from '../../../components/Header';
+import { View, Text } from "react-native";
 
 export const Notificacao = () => {
   return (
-    <Container>
-      <Title>Notificacao</Title>
-    </Container>
+    <>
+      <Header
+        appName={"Notificação"}
+      />
+      <Container>
+
+      </Container>
+    </>
   )
 };

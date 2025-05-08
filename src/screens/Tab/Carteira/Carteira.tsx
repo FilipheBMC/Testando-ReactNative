@@ -50,7 +50,11 @@ import { FlatList } from 'react-native-gesture-handler';
 export const Carteira = () => {
   return (
     <Container>
-      <Header />
+      <Header 
+        appName={"Wallet"}
+        iconAvatar
+        textLef
+      />
       <ViewContainer>
         <Content>
 
@@ -95,15 +99,17 @@ export const Carteira = () => {
           renderItem={({ item }) => (
             <ContentFlat>
 
-              <IconTransaction />
+              <IconTransaction 
+                source={item.icon}
+              />
               <DetailsTransaction>
 
-                <NameTransaction>Netflix</NameTransaction>
-                <SubTitleTransaction>Valor da Netflix</SubTitleTransaction>
+                <NameTransaction>{item.name}</NameTransaction>
+                <SubTitleTransaction>{item.subtitle}</SubTitleTransaction>
 
               </DetailsTransaction>
 
-              <PriceTransaction>R$:20</PriceTransaction>
+              <PriceTransaction>${item.price}</PriceTransaction>
 
             </ContentFlat>
           )}
@@ -118,6 +124,7 @@ export const Carteira = () => {
 
             </ContentFlatHeader>
           }
+          showsVerticalScrollIndicator={false}
         />
 
       </Footer>

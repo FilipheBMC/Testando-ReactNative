@@ -10,16 +10,30 @@ import {
     Status,
 } from "./styles";
 
-export const Header = () => {
+interface IHeader {
+    appName: String,
+    textLef?: Boolean,
+    iconAvatar?: boolean,
+}
+
+export const Header = ({
+    appName,
+    textLef,
+    iconAvatar
+}: IHeader) => {
     return (
         <Container>
             <ContentHeader>
-                <AppName>App Wallet</AppName>
-                <Status>Ativo</Status>
+                <AppName>{appName}</AppName>
+                {textLef &&
+                    (<Status>Ativo</Status>)}
             </ContentHeader>
-            <Avatar
-                source={{ uri: 'http://github.com/silvaneimartins.png' }}
-            />
+            {iconAvatar && (
+                <Avatar
+                    source={{ uri: 'http://github.com/silvaneimartins.png' }}
+                />
+            )}
+
         </Container>
     )
 };

@@ -1,16 +1,22 @@
 import React from 'react'
 import {
-        Container,
-        Title,
+  Container,
+  Title,
 
 } from "./styles";
 
-import { View, Text} from "react-native";
+import { Header } from "../../../components/Header";
+import { View, Text } from "react-native";
 
 export const Relatorio = () => {
   return (
-    <Container>
-      <Title>Relatorio</Title>
-    </Container>
+    <>
+      <Header
+        appName={"Relatório"}
+      />
+      <Container>
+
+      </Container>
+    </>
   )
 };

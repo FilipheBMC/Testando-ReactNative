@@ -1,16 +1,24 @@
 import React from 'react'
 import {
-        Container,
-        Title,
+  Container,
+  Title,
 
 } from "./styles";
 
-import { View, Text} from "react-native";
+import { Header } from '../../..//components/Header';
+import { View, Text } from "react-native";
 
 export const Settings = () => {
   return (
-    <Container>
-      <Title>Settings</Title>
-    </Container>
+    <>
+      <Header
+        appName={"Configuração"}
+        iconAvatar={false}
+        textLef={false}
+      />
+      <Container>
+
+      </Container>
+    </>
   )
 };
