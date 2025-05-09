@@ -1,10 +1,7 @@
-import theme from "@src/styles/theme";
 import styled from "styled-components/native";
+import theme from "@src/styles/theme";
 
-export const Container = styled.View`
-    flex: 1 ;
-    padding: 10px 15px;
-`;
+export const Container = styled.View``;
 
 export const ViewProfileName = styled.View`
     flex-direction: row;
