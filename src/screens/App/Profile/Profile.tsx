@@ -81,7 +81,7 @@ export const Profile = () => {
                 />
               </ViewIconButton>
             </TouchableOpacity>
-            <TitleFooter>Sair da Wallet</TitleFooter>
+            <TitleFooter>Deletar Wallet</TitleFooter>
           </ViewFooter>
         </Footer>
       </Container>

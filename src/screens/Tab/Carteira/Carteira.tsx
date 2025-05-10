@@ -46,8 +46,16 @@ import { transaction } from '../../../Util/transaction';
 import { Header } from "../../../components/Header/Header";
 import { View, Text, TouchableOpacity } from "react-native";
 import { FlatList } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 export const Carteira = () => {
+
+  const Navigation = useNavigation();
+
+  const handleAddCart = () =>{
+    Navigation.navigate('AddCartao');
+  }
+
   return (
     <Container>
       <Header 
@@ -74,15 +82,17 @@ export const Carteira = () => {
         <Body>
           <TouchableOpacity style={{ alignItems: 'center' }}>
             <IconTransfer source={Transfer} />
-            <TitleTransfer>Transferência</TitleTransfer>
+            <TitleTransfer>Transfer</TitleTransfer>
           </TouchableOpacity>
           <TouchableOpacity style={{ alignItems: 'center' }}>
             <IconPayment source={Payment} />
-            <TitlePayment>Pagamentos</TitlePayment>
+            <TitlePayment>Form de Pagtos</TitlePayment>
           </TouchableOpacity>
-          <TouchableOpacity style={{ alignItems: 'center' }}>
+          <TouchableOpacity
+            style={{ alignItems: 'center' }}
+            onPress={(handleAddCart)}>
             <IconTapOut source={TopOut} />
-            <TitleTapOut>Mais Opções</TitleTapOut>
+            <TitleTapOut>Add Pagto</TitleTapOut>
           </TouchableOpacity>
           <TouchableOpacity style={{ alignItems: 'center' }}>
             <IconPayOut source={Payout} />

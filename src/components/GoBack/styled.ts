@@ -6,4 +6,5 @@ export const Container = styled.TouchableOpacity`
     margin-top: ${Platform.OS === "ios" ? 0 : 35}px;
     width: 50px;
     height: 50px;
+    margin-bottom: 15px;
 `;

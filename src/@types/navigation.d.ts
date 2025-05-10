@@ -6,6 +6,7 @@ export declare global{
             Cadastro: undefined,
             Notificacao: undefined,
             Profile: undefined,
+            AddCartao: undefined,
         }
     }
 }
