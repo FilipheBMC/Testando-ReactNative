@@ -46,3 +46,25 @@ export const PorfileName = styled.Text`
     color: ${theme.COLORS.BLACK};
     font-family: ${theme.FONTS.POPPINSMEDIUM};
 `;
+
+export const ViewFooter = styled.View`
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    /* background-color: ${theme.COLORS.ATTENTION}; */
+`;
+
+export const TitleFooter = styled.Text`
+    font-size: 17px;
+    color: ${theme.COLORS.PURPLE};
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    margin-top: 10px;
+`;
+
+export const ViewIconButton = styled.View`
+    padding: 5px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: ${theme.COLORS.GRAY5};
+`;

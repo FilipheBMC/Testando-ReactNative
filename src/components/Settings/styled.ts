@@ -43,3 +43,4 @@ export const PorfileName = styled.Text`
     color: ${theme.COLORS.BLACK};
     font-family: ${theme.FONTS.POPPINSMEDIUM};
 `;
+

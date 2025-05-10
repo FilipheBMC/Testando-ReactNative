@@ -8,7 +8,6 @@ import {
     ViewRight,
     PorfileName,
 
-
 } from "./styled";
 
 import {
@@ -17,7 +16,7 @@ import {
     BellSimple,
     Wallet,
     Password,
-    PhoneCall
+    PhoneCall,
 
 } from "phosphor-react-native";
 
@@ -31,6 +30,7 @@ interface ISetings {
     typeWalet?: boolean,
     typeLogin?: boolean,
     typeCall?: boolean,
+    onPress: () => void; 
 }
 
 export const Setings = ({
@@ -41,6 +41,7 @@ export const Setings = ({
     typeWalet,
     typeLogin,
     typeCall,
+    onPress,
 }: ISetings) => {
 
     const { COLORS } = useTheme();
@@ -106,12 +107,13 @@ export const Setings = ({
 
                 <ViewRight>
                     <PorfileName>{name}</PorfileName>
-                    <TouchableOpacity onPress={handleGoPerfil}>
+                    <TouchableOpacity onPress={onPress}>
                         <CaretRight size={32} weight="light" />
                     </TouchableOpacity>
                 </ViewRight>
 
             </ViewProfileName>
+
         </Container>
     )
 }

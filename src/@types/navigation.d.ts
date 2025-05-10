@@ -5,6 +5,7 @@ export declare global{
             RecuperarSenha: undefined,
             Cadastro: undefined,
             Notificacao: undefined,
+            Profile: undefined,
         }
     }
 }
