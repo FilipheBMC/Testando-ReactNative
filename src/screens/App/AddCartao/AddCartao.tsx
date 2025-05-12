@@ -1,8 +1,8 @@
 import { View, Text, Pressable } from 'react-native';
 import React from 'react';
 
-import BgPng from "../../assets/addcard.png";
-import ChipPng from "../../assets/chipcard.png";
+import BgPng from "../../../assets/addcard.png";
+import ChipPng from "../../../assets/chipcard.png";
 
 import {
     Container,
@@ -13,12 +13,16 @@ import {
 
 } from "./styles";
 
-import { GoBack } from "../../components/GoBack";
+import { GoBack } from "../../../components/GoBack";
+import { useNavigation } from '@react-navigation/native';
 
 export const AddCartao = () => {
 
+    const Navigation = useNavigation();
+
     const handleClickCartao = () =>{
         console.warn('Botão clicado');
+        Navigation.navigate('DetailCard');
     };
 
     return (

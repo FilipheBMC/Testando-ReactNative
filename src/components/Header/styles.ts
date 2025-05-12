@@ -1,5 +1,5 @@
 import theme from "@src/styles/theme";
-import { Platform } from "react-native"
+import { Platform, Pressable } from "react-native"
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -39,4 +39,9 @@ export const Status = styled.Text`
     font-size:15px;
     color: ${theme.COLORS.GRAY4};
     font-family: ${theme.FONTS.POPPINSMEDIUM};
+`;
+
+export const IconButton = styled(Pressable)`
+    width: 40px;
+    height: 40px;
 `;

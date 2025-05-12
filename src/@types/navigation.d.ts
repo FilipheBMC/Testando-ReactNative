@@ -7,6 +7,7 @@ export declare global{
             Notificacao: undefined,
             Profile: undefined,
             AddCartao: undefined,
+            DetailCard: undefined,
         }
     }
 }
