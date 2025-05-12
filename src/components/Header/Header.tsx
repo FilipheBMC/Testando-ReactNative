@@ -13,7 +13,7 @@ import {
 
 // Importando icone
 
-import { ChartBarHorizontal } from 'phosphor-react-native';
+import { ChartBarHorizontal, CurrencyCircleDollar } from 'phosphor-react-native';
 
 interface IHeader {
     appName: String,
@@ -21,6 +21,7 @@ interface IHeader {
     iconAvatar?: boolean,
     iconeLeft?: boolean,
     typeRelatorio?: boolean,
+    typeTransaction?: boolean,
 }
 
 export const Header = ({
@@ -29,6 +30,7 @@ export const Header = ({
     iconAvatar,
     iconeLeft,
     typeRelatorio,
+    typeTransaction,
 
 }: IHeader) => {
     return (
@@ -38,6 +40,12 @@ export const Header = ({
                     {typeRelatorio && (
                         <IconButton>
                             <ChartBarHorizontal size={32} weight='light' />
+                        </IconButton>
+                    )}
+
+                    {typeTransaction && (
+                        <IconButton>
+                            <CurrencyCircleDollar size={32} weight='light' />
                         </IconButton>
                     )}
                 </>

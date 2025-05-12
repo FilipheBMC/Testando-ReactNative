@@ -56,6 +56,10 @@ export const Carteira = () => {
     Navigation.navigate('AddCartao');
   }
 
+  const handleTransaction = () => {
+    Navigation.navigate("Transaction");
+  };
+
   return (
     <Container>
       <Header 
@@ -128,7 +132,7 @@ export const Carteira = () => {
 
               <Title>Minhas transaçõe</Title>
 
-              <ButtonVerTodos>
+              <ButtonVerTodos onPress={handleTransaction}>
                 <ButtonTitleVerTodos>Ver todas</ButtonTitleVerTodos>
               </ButtonVerTodos>
 

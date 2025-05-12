@@ -25,7 +25,7 @@ export const AmountValue = styled.Text`
     font-family: ${theme.FONTS.POPPINSREGULAR};
     position: absolute;
     top: 57.5px;
-    left:155px;
+    left:175px;
 `;
 
 export const ViewContent = styled.View`
