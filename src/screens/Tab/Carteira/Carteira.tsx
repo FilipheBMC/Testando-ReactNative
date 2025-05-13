@@ -42,7 +42,7 @@ import TopOut from "../../../assets/add-circle.png";
 
 // Finalizado as importações das imagens par ao body
 
-import { transaction } from '../../../Util/transaction';
+import { limited_transaction } from '../../../Util/limited_transaction';
 import { Header } from "../../../components/Header/Header";
 import { View, Text, TouchableOpacity } from "react-native";
 import { FlatList } from 'react-native-gesture-handler';
@@ -109,7 +109,7 @@ export const Carteira = () => {
       <Footer>
 
         <FlatList
-          data={transaction}
+          data={limited_transaction}
           renderItem={({ item }) => (
             <ContentFlat>
 

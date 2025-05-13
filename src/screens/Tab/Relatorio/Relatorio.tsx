@@ -24,8 +24,16 @@ import { transaction } from '../../../Util/transaction';
 import { FlatList } from 'react-native-gesture-handler';
 import { Header } from "../../../components/Header";
 import BalancePng from '../../../assets/estatistica.png';
+import { useNavigation } from '@react-navigation/native';
 
 export const Relatorio = () => {
+
+  const Navigation = useNavigation();
+
+  const handleVerTodasTransacoes = () =>{
+    Navigation.navigate("Transaction");
+  };
+
   return (
     <>
       <Header
@@ -72,7 +80,7 @@ export const Relatorio = () => {
 
                 <Title>Minhas transaçõe</Title>
 
-                <ButtonVerTodos>
+                <ButtonVerTodos onPress={handleVerTodasTransacoes}>
                   <ButtonTitleVerTodos>Mais Recentes</ButtonTitleVerTodos>
                 </ButtonVerTodos>
 

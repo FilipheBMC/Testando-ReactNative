@@ -30,7 +30,7 @@ export const Transaction = () => {
     return (
         <>
             <Header
-                appName={"Transaction"}
+                appName={"Minhas Transações"}
                 iconeLeft
                 typeTransaction
             />
