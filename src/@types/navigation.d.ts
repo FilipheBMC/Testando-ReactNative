@@ -9,6 +9,7 @@ export declare global{
             AddCartao: undefined,
             DetailCard: undefined,
             Transaction: undefined,
+            AppRoutes: undefined
         }
     }
 }

@@ -13,7 +13,7 @@ export const Content = styled.View`
     padding: 20px;
     align-items: center;
     justify-content: space-around;
-    background-color: ${theme.COLORS.PURPLE};
+    background-color: ${theme.COLORS.PURPLEDARK3};
     border-radius: 40px;
 `;
 
@@ -25,7 +25,9 @@ export const ViewContainer = styled.View`
 
 export const ViewBalanceLeft = styled.View``;
 
-export const ViewBalanceRight = styled.View``;
+export const ViewBalanceRight = styled.View`
+    z-index: 1;
+`;
 
 export const TitleValue = styled.Text`
     font-size: 16px;
@@ -168,4 +170,16 @@ export const Title = styled.Text`
   margin-left: 25px;
   color: ${theme.COLORS.GRAY1};
   font-family: ${theme.FONTS.POPPINSBOLD};
+`;
+
+export const EllipseOne = styled.Image`
+    position: absolute;
+    top: 1px;
+    left: 40px;
+`;
+
+export const EllipseTwo = styled.Image`
+    bottom: 0;
+    right: 0px;
+    position: absolute;
 `;

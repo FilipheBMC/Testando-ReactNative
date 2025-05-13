@@ -52,6 +52,11 @@ const Login: React.FC = () => {
         navigation.navigate('Cadastro');
     };
 
+    const handleEntrarAplicacao = () => {
+        navigation.navigate('AppRoutes')
+        console.log('entrando');
+    }
+
     return (
         <KeyboardAvoidingView
             behavior='position'
@@ -114,7 +119,7 @@ const Login: React.FC = () => {
                         <Button
                             title="Entrar"
                             variant='primary'
-                            onPress={() => onPressButton()}
+                            onPress={() => handleEntrarAplicacao()}
                         />
 
 

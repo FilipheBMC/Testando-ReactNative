@@ -31,6 +31,8 @@ import {
   SubTitleTransaction,
   PriceTransaction,
 
+  EllipseOne,
+  EllipseTwo,
 } from "./styles";
 
 // Importando as imagens
@@ -48,11 +50,17 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { FlatList } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
+// Importando Ellipses
+
+import EllipseOnePng from "../../../assets/ellipse1.png";
+import EllipseTwoPng from "../../../assets/ellipse2.png";
+
+
 export const Carteira = () => {
 
   const Navigation = useNavigation();
 
-  const handleAddCart = () =>{
+  const handleAddCart = () => {
     Navigation.navigate('AddCartao');
   }
 
@@ -62,13 +70,15 @@ export const Carteira = () => {
 
   return (
     <Container>
-      <Header 
+      <Header
         appName={"Wallet"}
         iconAvatar
         textLef
       />
       <ViewContainer>
         <Content>
+
+          <EllipseOne source={EllipseOnePng}/>
 
           <ViewBalanceLeft>
             <TitleValue>Valor total:</TitleValue>
@@ -79,6 +89,8 @@ export const Carteira = () => {
             <TitleCartao>Cartão</TitleCartao>
             <TitleNomeCartao>Wallet</TitleNomeCartao>
           </ViewBalanceRight>
+
+          <EllipseTwo source={EllipseTwoPng}/>
 
         </Content>
 
@@ -113,7 +125,7 @@ export const Carteira = () => {
           renderItem={({ item }) => (
             <ContentFlat>
 
-              <IconTransaction 
+              <IconTransaction
                 source={item.icon}
               />
               <DetailsTransaction>
